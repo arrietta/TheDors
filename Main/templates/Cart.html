@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Cart{% endblock %}
+{% block additional_head %}
+    <link rel="stylesheet" href="{% static 'main.css'%}">
+{% endblock %}
+{% block content %}
+
+    <main class="container-fluid brd_btm">
+        <div class="row">
+            <div class="col-md-6 left orders" style="height: 664px">
+                {% for order in orders %}
+                <div class="order container-fluid " id="#order-{{ order.pk }}">
+                    <div class="order_image"><img src="{{ order.door.image.url }}" alt=""></div>
+                    <div class="door">
+                        <div class="top inline">
+                            <span class="name">{{ order.door.shape }}</span>
+                            <span class="price" id='price-{{ order.pk }}'>{{ order.door.price }}</span>
+                        </div>
+                        <div class="bottom inline">
+                            <span ><a class="delete" href="#" onclick="deleteOrder({{ order.pk }})">Удалить</a></span>
+                            <div class="buttons">
+                                <button class="butn-dark" value="{{ order.pk }}" onclick="edit(this,-1)">-</button>
+                                <div class = 'pk' id='count-{{ order.pk }}'>{{order.count}}</div>
+                                <button class="butn-light" value="{{ order.pk }}" onclick="edit(this,1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-6" style="height: 664px">
+                <div>
+                    <h3>Оформление</h3>
+                    <h3> заявки для заказа:</h3>
+                </div>
+                <form method="post" action="{% url 'order' %}">
+                    {% csrf_token %}
+                    <div class="text">
+                        <input type="hidden" name="unique_id" value="{{unique_id}}">
+                        <input type="text" name="name" id ='FullName' class="client_info" placeholder="ФИО">
+                        <input type="text" name="phone" id="phone" class="client_info" placeholder="Телефон">
+                    </div>
+                    <div class="check">
+                        <div class="gray">* -- Обязательный пункт
+                                </div>
+                        <div>
+                            <label class="custom-checkbox">
+                                <input name="delivery" type="checkbox" id="delivery">
+                                <span class="checkmark"></span>
+                                Доставка
+                            </label>
+<!--                            <label>Доставка</label>-->
+
+                        </div>
+                        <div>
+                            <label class="custom-checkbox">
+                                <input name="size" type="checkbox" id="size">
+                                <span class="checkmark"></span>
+                                Бесплатный замер проемов
+                            </label>
+
+
+                        </div>
+                    </div>
+                    <div class="bottom_part">
+                        <div class="total">
+                        <div>
+                            Итого (Без услуг):
+                        </div>
+                        <div >
+                            <div id="total_price"></div>руб
+                        </div>
+                        </div>
+                        <button class="client_info">Заказать**</button>
+                        <div class="gray">
+                            ** -- Оплата доступна только на месте доставки
+                        </div>
+                    </div>
+
+
+
+                </form>
+
+            </div>
+        </div>
+        <script src="{% static 'Cart.js' %}"></script>
+<!--        <script src="{% static 'script.js' %}"></script>-->
+    </main>
+<script>
+$('#link_cart').attr('value','active');
+</script>
+{% endblock %}

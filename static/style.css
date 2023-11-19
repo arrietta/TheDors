@@ -1,0 +1,379 @@
+
+*{
+    color:#fff;
+
+}
+h3{
+    margin: 0;
+}
+.nav-link{
+    padding: 1rem;
+
+}
+
+footer{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+}
+a:hover{
+    color: #918c8c!important;
+    transition: 0.2s;
+}
+.title{
+  font-size: 28px;
+}
+.Logo{
+    color:#666666!important;
+    font-family: Felidae, serif;
+    margin-left: 10px;
+    font-size: 26px!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -1.12px;
+}
+.navbar-toggler-icon{
+    background-image: url("/static/image/burger.svg")!important;
+}
+
+
+.nav-link{
+    margin: 0 10px;
+    color: #E0E0E0;
+    font-family: Manrope, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+.nav-link{
+    color: #918c8c!important;
+}
+.nav-link[ value="active"]{
+    color: #fff!important;;
+}
+
+main{
+    border-top: #fff 2px solid!important;
+    position: relative;
+    transition: 0.6s;
+}
+
+.Line{
+    border-right: #fff 2px solid!important;
+}
+.orders{
+    padding: 0!important;
+    height: 100%;
+}
+.order{
+    position: relative;
+    display: flex;
+    padding: 0 !important;
+    border-bottom: #fff 2px solid;
+    width: 100%;
+    height: 8rem;
+}
+.door{
+
+    width: calc(100% - 7.1rem);
+    float: right;
+}
+.door > div{
+    padding: 1rem 2%;
+}
+.top > span{
+    font-size: 1.6rem;
+}
+.image{
+    opacity: 0.45;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+
+}
+.image_box{
+    background-color: white;
+    border-bottom: #fff 2px solid;
+    height: 80vh;
+    width: 25vw;
+    background-image: url("/static/image/image_box.png");
+    background-size: cover;
+
+    position: relative;
+    background-position: 50%;
+
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+}
+.construct{
+    transition: 1s;
+    display: none;
+}
+.butn-light{
+    padding: 10px;
+    color: #000;
+    border: white 1px solid;
+}
+.butn-dark{
+    color: #fff;
+    padding: 10px;
+    background-color: black!important;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 0;
+}
+.buttons{
+    position: relative;
+    box-shadow: none;
+    border: 1px solid #fff;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+}
+
+.buttons > button{
+    width: 2rem;
+    height: 1.9rem;
+    font: 1em sans-serif;
+    margin: auto;
+    line-height: 0;
+
+}
+
+.buttons > div{
+    text-align: center;
+
+    margin: auto;
+    width: 2rem;
+}
+.price{
+    color: #9B9B9B;
+    text-align: right;
+
+}
+.f32{
+    font-size: 32px;
+}
+.f16{
+    font-size: 16px;
+}
+.delete{
+    color: #FF5757!important;
+    text-align: center;
+    font-size: 0.9rem;
+    text-decoration-line: underline;
+}
+.shift{
+    margin-top:13vh ;
+}
+.order_image{
+    position: relative;
+    width: 8rem;
+
+
+}
+.order_image > img{
+    height: 8rem;
+
+}
+.select{
+    display: flex;
+}
+
+.door_types{
+    border-bottom: white solid 2px;
+    display: flex;
+}
+.door_types > div{
+
+    width: 16.7vw;
+    text-align: center;
+    height: 3rem;
+    padding-top: 0.8rem;
+}
+.color_pic{
+    background-color: white;
+    width: 25vw;
+    padding: 20px 30px;
+
+}
+.black{
+    color: black;
+}
+.colors{
+    text-align: center;
+}
+.color{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+.client_info{
+    margin: 10px 20px ;
+    width: 94%;
+    height: 4rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    font-size: 28px;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.check>div{
+    margin: 0 30px;
+}
+/* Style for the custom checkbox container */
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the hidden default checkbox input */
+.custom-checkbox input {
+    display: none;
+}
+
+/* Style for the custom checkbox design */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black; /* Black background */
+    border: 2px solid white; /* Add a white border */
+    border-radius: 5px;
+}
+
+/* Style for the checkmark (visible when the checkbox is checked) */
+.custom-checkbox input:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 8px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.gray{
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+    padding-top: 10px;
+
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    width: 46vw;
+    margin:auto;
+        padding: 10px 20px;
+
+}
+.bottom_part{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.total > div {
+    display: flex;
+}
+.left_arrow{
+    transform: rotate(180deg);
+}
+@media only screen and (max-width: 1024px) {
+    .custom-checkbox{
+        font-size: 14px;
+    }
+    .check{
+        text-align: left;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .bottom_part{
+        width: 97%;
+    }
+    .top > span{
+        font-size: 1.2rem;
+    }
+    .door > div{
+        padding: 1vh 2%;
+    }
+    .buttons{
+        width: 5rem;
+        height: 1.7rem;
+
+    }
+    .buttons > button{
+        width: 1.6666rem;
+        height: 1.6rem;
+
+
+    }
+    .buttons > div{
+
+        width: 1.6666rem;
+    }
+    .order{
+        height: 6rem;
+    }
+    /*.image{*/
+    /*    width: 6rem;*/
+    /*    height: 6rem;*/
+    /*}*/
+    .nav-line{
+    border-bottom: #918c8c solid 1px;
+}
+    .col-md-6 {
+
+        width: 100%;
+    }
+    .client_info{
+        height: 3.5rem;
+        width: 92%;
+        font-size: 24px;
+    }
+
+    .order_image{
+        width: 6rem;
+    }
+    .order_image > img{
+        height: 6rem;
+    }
+
+
+    .door{
+        width: calc(100% - 6.1rem);
+    }
+    .total{
+        width: 90%;
+    }
+}

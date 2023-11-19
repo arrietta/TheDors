@@ -1,0 +1,208 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cart{% endblock %}
+{% block additional_head %}
+    <link rel="stylesheet" href="{% static 'main.css'%}">
+{% endblock %}
+{% block content %}
+
+
+
+
+<main class="container-fluid">
+
+  <div class="page container-fluid brd_btm " id="page-1">
+          <div class="plain-text">
+            <h3>
+              Подберите себе двери с <br />
+              помощью нашего <br />
+              конструктора
+            </h3>
+            <a class="enter" href="{% url 'catalog'%}">
+              В каталог
+              <img src="{% static 'image/arrow.svg'%}" class="arrow" >
+            </a>
+          </div>
+<!--      <div class="down_btn"><a ><img class="down" src="{% static 'image/arrow.svg'%}"></a></div>-->
+  </div>
+  <div class="page " id="page-2">
+    <div class="head-line brd_btm container-fluid">
+        <h3 >Наши преимущества:</h3>
+    </div>
+    <div class="row brd_btm">
+      <div class="col-md-6 left">
+        <div class="container ">
+          <p class="number">01</p>
+          <div class="Abs-cntr-v">
+            Предоставляем гарантию <br />на двери и установку <br />
+            сроком на один год.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="container">
+        <p class="number">02</p>
+        <div class="Abs-cntr-v">
+          Доставка на следующий <br />день, после оформления <br />заказа,
+          без предоплаты.
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row brd_btm">
+      <div class="col-md-6 left">
+        <div class="container">
+          <p class="number">03</p>
+          <p class="size-2" >Точно <br />замеряем.</p>
+          <img class="svg" src="{% static 'image/Group 39.svg'%}">
+        </div>
+
+
+      </div>
+      <div class="col-md-6">
+        <div class="container">
+          <p class="number">04</p>
+          <p class="size-2">
+            Качественно <br />
+            устанавливаем.
+          </p>
+          <img class="svg" src="{% static 'image/Union.svg'%}">
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid page" id="page-3">
+      <div class="row brd_btm">
+        <div class="col-md-6 left">
+          <div class="container">
+            <p class="number" >05</p>
+          <p class="title">О нас</p>
+          <p class="content-text">
+            Компания ROMERIO занимается продажей <br />межкомнатных дверей.
+            Полотна изготовлены из<br />
+            качественных современных материалов по<br />
+            новейшим технологиям и, благодаря великолепной <br />отделке и
+            продуманному дизайну, способны стать<br />
+            настоящим украшением интерьера. <br />
+            </br>
+            Убедитесь в этом, придя к нам в салон. Мы<br />
+            уверены, что Вы найдете именно ту дверь, которую <br />давно
+            искали. А наши продавцы помогут <br />определиться с выбором.
+            Работы по установке <br />дверей выполняют
+            высококвалифицированные<br />
+            специалисты. Нам важно, чтобы покупка в нашем магазине<br />
+            была для Вас приятной и оставила только<br />
+            положительные эмоции.
+          </p>
+          </div>
+
+        </div>
+        <div class="col-md-6 text-logo">
+
+          <img src="{% static 'image/Subtract.png'%}" class="svg">
+        </div>
+            </div>
+            <div class="row brd_btm">
+              <div class="col-md-6 left">
+                <div class="container">
+                  <div class="top-text">
+                  <p class="number">06</p>
+                  <p class="title">
+                    Убедитесь в нашей<br />
+                    компитентности у нас<br />
+                    в салоне
+                  </p>
+                </div>
+                  <div  class="bottom-text ">
+                    <div class="d-spb ">
+
+                    <div class="contact" >
+                      <div>name@gmail.com</div>
+
+                      <div>8-(985)-222-01-08</div>
+                    </div>
+                    <div class="text-center-h" >
+                      Ш. Автомагистраль Москва – <br />Нижний Новгород, вл. 19Bc1, Реутов
+                    </div>
+                </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="col-md-6 pad-0 ">
+                <iframe
+                        class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39048.74231686945!2d37.825193244501335!3d55.76339870044172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acbabd918f9d3%3A0x20e47883c02e9d18!2z0KDQtdGD0YLQvtCyLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e1!3m2!1sru!2skz!4v1697822980313!5m2!1sru!2skz"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="row  brd_btm">
+              <div class="col-md-4 cl left ">
+                <div class="container-s">
+                  <p class="title">Замер</p>
+                  <div class="content-text-s">
+                    При заказе у вас имеется возможность вернуть деньги за замер
+                  </div>
+
+                </div>
+                <img class="svg" src="{% static 'image/Group 39.svg'%}">
+              <div class="bottom-text border d-spa">
+                    <span>800 ₽ За проем</span>
+                    <div class="Line"></div>
+                    <a href="#">Позвонить</a>
+                  </div>
+              </div>
+              <div class="col-md-4 cl left ">
+                <div class="container-s">
+                  <p class="title">Установка</p>
+                  <div class="content-text-s">
+                    Для полной информации о цене на ваш заказ уточните у дилера
+                  </div>
+
+
+                </div>
+                 <img class="svg" src="{% static 'image/Install.svg'%}">
+                <div class="bottom-text border d-spa">
+                  <span>Договорная</span>
+                  <div class="Line"></div>
+                  <a href="#">Позвонить</a>
+                </div>
+
+              </div>
+              <div class="col-md-4 cl left">
+                <div class="container-s">
+                  <p class="title">Доставка</p>
+
+                  <div class="content-text-s">+ 50 ₽/КМ если доставка за пределы МКАД</div>
+
+                </div>
+                 <img class="svg" src="{% static 'image/Delivery.svg'%}">
+                <div class="bottom-text border d-spa">
+                  <span >2500 ₽</span>
+                  <div class="Line"></div>
+                  <a href="#">Позвонить</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+</main>
+<script>
+$('#link_main').attr('value','active');
+</script>
+{% endblock %}

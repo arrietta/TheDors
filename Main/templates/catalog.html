@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Catalog{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'catalog.css'%}">
+    <main>
+      <div class="catalog">
+        <div class="choice">
+        <a href="#" class="choice c1"  onclick="changeToCatalogue1(this)">Эмаль</a>
+        <a href="#" class="choice c2" onclick="changeToCatalogue2(this)">Шпон</a>
+        </div>
+        <div class="content">
+            <div class="content-1 cnt" id="content-1">
+            <div>
+                <div class="contents"  ><a href="#" onclick="choose(this)">MODERN</a></div>
+
+          <div class="contents"   ><a href="#" onclick="choose(this)" >CLASSIC</a></div>
+
+              <div class="contents"  ><a href="#" onclick="choose(this)" >GRAND</a></div></div>
+          <div>
+            <div class="contents"  ><a href="#" onclick="choose(this)" >AMPIR</a></div>
+
+              <div class="contents"  ><a href="#" onclick="choose(this)" >PORTO</a></div>
+
+              <div class="contents"  ><a href="#" onclick="choose(this)" >PANTOGRAPH</a></div></div>
+          <div>
+            <div class="contents"  ><a href="#"  onclick="choose(this)">GRIGLIA</a></div>
+
+              <div class="contents"  ><a href="#" onclick="choose(this)" >VISION</a></div>
+
+              <div class="contents"  ><a href="#" onclick="choose(this)">LINE</a></div></div>
+
+        </div>
+        <div class="content-2 cnt right-move" id="content-2">
+            <div>
+                <div class="contents"  ><a href="#" onclick="choose(this)" >LOFT</a></div>
+
+            <div class="contents"  ><a href="#" onclick="choose(this)" >PLAIN</a></div>
+
+            <div class="contents"  ><a href="#" onclick="choose(this)">ATLANTICA</a></div>
+            </div>
+
+        </div>
+    </div>
+      </div>
+        <div class="construct">
+            <div class="box" >
+                <div class="door_box Line">
+                    <div class="image_box" >
+                        <img  class="image" id="molding_image" src="{% static 'image/empty.png' %}" alt=""  >
+                        <img  class="image" id="Door_image" src="{% static 'image/door.png' %}" alt=""  >
+                        <img  class="image" id="portal_image" src="{% static 'image/portal.png' %}" alt=""  >
+                        <img  class="image"  src="{% static 'image/Handle.png' %}" alt=""  >
+                        <img  class="image"  src="{% static 'image/DoorShadow2.png' %}" alt=""  >
+
+                    </div>
+                    <div class="info_box">
+                    <div>
+                        <label class="door_name" id="dnm">Classic</label>
+                        <div class="">Цена: <strong id="price">0</strong></div>
+                    </div>
+                        <form method="post" action="{% url 'catalog' %}">
+                             {% csrf_token %}
+
+                            <input type="hidden"  name = "code" id ="code" value="{{unique_id}}">
+                            <input type="hidden"  name = "color" id ="color" value="#f1ece1">
+                            <input type="hidden" name = "door" id ="door" value="">
+                            <button class="cart_btn butn-light" onclick="validate() ">В корзину</button>
+                        </form>
+
+
+                </div>
+                </div>
+
+
+            <div class="typer">
+                <div class="door_types">
+                    <div class="Line type point" onclick="set_type('Classic')" id="collection">БАЗОВЫЙ ВАРИАНТ</div>
+                    <div class="Line type point" onclick="set_type('VO')">VO</div>
+                    <div class="type point" onclick="set_type('DO')">DO</div>
+                </div>
+                <div class="build">
+
+
+
+
+
+                    <label  class="dtype f32">Форма</label>
+
+                    <div class="select" >
+                        <button type="button" class='bttn-dark left_arrow nb'  onclick="left('select_shape')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                        <div id = 'select_shape' class="selector" >
+
+                        </div>
+                        <button type="button" class='bttn-dark right nb'  onclick="right('select_shape')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                    </div>
+
+                     <label class="dtype f32" >Портал</label>
+                    <div class="select" >
+                        <button type="button" class='bttn-dark left_arrow nb'  onclick="left('select_portal')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                        <div id="select_portal" class="selector">
+
+
+                        </div>
+                        <button type="button" class='bttn-dark right nb'   onclick="right('select_portal')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                    </div>
+
+
+                    <label class="dtype f32">Фреза</label>
+                    <div class="select"  >
+                        <button type="button" class='bttn-dark left_arrow nb'  onclick="left('select_bevel')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                        <div id="select_bevel" class="selector">
+
+                        </div>
+                        <button type="button" class='bttn-dark right nb'  onclick="right('select_bevel')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                    </div>
+
+
+                    <label class="dtype f32" id="bev">Багет</label>
+                    <div class="select" id="bevs" >
+                        <button type="button" class='bttn-dark left_arrow nb'  onclick="left('select_molding')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                        <div id="select_molding" class="selector" >
+
+
+                        </div>
+                        <button type="button" class='bttn-dark right nb'  onclick="right('select_molding')" ><img src="{% static 'image/arrow.svg'%}"></button>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+                <div class="color_pic ">
+                    <div class="title black f32">Цвет</div>
+                    <div class="color_box">
+                        <div class="colors" id="select_color">
+                    </div>
+
+
+                    </div>
+                </div>
+
+        </div>
+        </div>
+
+    </main>
+    <script>
+        const get_data = {{data|safe}};
+    </script>
+
+    <script src="{% static 'script.js' %}"></script>
+<script>
+
+
+  </script>
+<script>
+    $('#link_catalog').attr('value','active');
+
+    console.log($('.ft'));
+</script>
+{% endblock %}

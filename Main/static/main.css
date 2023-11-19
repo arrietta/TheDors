@@ -1,0 +1,156 @@
+@import url(https://db.onlinewebfonts.com/c/3295314e055fdc8efa7b9c614782bbbc?family=Nohemi+Light);
+
+* {
+  padding: 0;
+  margin: 0;
+
+
+}
+a{
+  color: white!important;
+}
+
+@font-face {
+    font-family: "Nohemi Light";
+    src: url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.eot");
+    src: url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3295314e055fdc8efa7b9c614782bbbc.svg#Nohemi Light")format("svg");
+}
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/media/tset_1.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid white;
+}
+a{
+  text-decoration-line: none;
+}
+.arrow{
+  margin-left: 10px;
+}
+.enter{
+  font-size: 18px;
+  color: white;
+  text-decoration-line: none;
+}
+.plain-text {
+  padding-left: 60px;
+  padding-top: 40px;
+
+}
+.plain-text h1 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+.page2 {
+  /*grid-template-rows: repeat(2, 1fr);*/
+  height: 1296px;
+  background-image: url('/media/Interior_1_1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+.header {
+  border-bottom: 2px solid white;
+  height: 96px;
+  font-size: 27px;
+  font-weight: lighter;
+  width: 100%;
+
+}
+.header p {
+
+  margin-left: 60px;
+  line-height: 96px;
+}
+
+.row {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  font-size: 23px;
+  height: 600px;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.col1 {
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid white;
+}
+.col2 {
+  width: 50%;
+  height: 100%;
+}
+.inner{
+   padding-left: 4rem;
+}
+.number {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-top: 40px;
+  font-family: "Fira Sans", sans-serif;
+}
+.row-text {
+  padding-top: 25%;
+  font-size: 22px;
+}
+.row-head {
+  padding-top: 5%;
+  font-size: 22px;
+}
+
+
+
+.svg {
+  margin: auto;
+  width: 25%;
+  display: flex;
+}
+
+
+.row2-text {
+  padding-top: 1rem;
+}
+
+
+.row3-col1 {
+  width: 45%;
+  height: 100vh;
+  border-right: 2px solid white;
+  padding-left: 4rem;
+}
+.row3-text {
+  font-size: 34px;
+  padding-bottom: 6rem;
+}
+.content-text {
+  font-size: 12px;
+  padding-bottom: 20%;
+}
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 18rem;
+}
+.text-logo h1 {
+  font-family: "Nohemi Light", serif;
+  font-weight: 300;
+  font-size: 85px;
+}
+
+

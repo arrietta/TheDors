@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Cart{% endblock %}
+{% block content %}
+
+    <main >
+
+    <div class="box">
+        <div class="image_box"  >
+            <img  class="image" id="Door_image" src="{% static 'image/door.png' %}" alt=""  >
+            <img  class="image" id="portal_image" src="{% static 'image/portal.png' %}" alt=""  >
+        </div>
+        <div>
+            <form method="post" action="{% url 'catalog' %}">
+                 {% csrf_token %}
+                <input type="hidden"  name = "code" id ="code" value="{{unique_id}}">
+                <input type="hidden" name = "door" id ="door" value="">
+
+                <label id="collection"></label>
+
+
+                <label >Select Shape:</label>
+                <div id = 'select_shape'>
+
+                </div>
+                 <label >Select Portal:</label>
+                <div id="select_portal" >
+
+                    <br>
+
+
+                </div>
+
+                <label >Select Bevel:</label>
+                <div id="select_bevel" >
+
+                    <br>
+
+
+                </div>
+
+                <label >Select Molding:</label>
+                <div id="select_molding" >
+
+                    <br>
+
+                </div>
+
+                <label >Select Color:</label>
+                <div id="select_color" >
+
+                    <br>
+
+                </div>
+                <br>
+                <button type="submit" style="color : black" onclick="validate()">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+    </main>
+    <script>
+        const get_data = {{data|safe}};
+    </script>
+
+    <script src="{% static 'script.js' %}"></script>
+{% endblock %}
+
+
+

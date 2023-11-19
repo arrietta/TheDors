@@ -1,0 +1,358 @@
+
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", serif;
+}
+a {
+  color: rgb(163, 163, 163);
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+selector{
+  white-space: nowrap;
+}
+.catalog {
+  color: white;
+}
+.choice {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.9rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.c1 {
+  color: white;
+  transition: color 0.3s ease;
+}
+.c2 {
+  color: rgb(128, 128, 128);
+  transition: color 0.3s ease;
+}
+
+.content-1 {
+  margin: auto;
+  max-width: 150rem;
+  text-align: center;
+
+  width: 95vw;
+  
+}
+
+.cnt > div{
+  display: none;
+  display: flex;
+
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.zoom{
+  transform: translateY(-200rem);
+}
+.unzoom{
+  transform: translateY(200rem);
+}
+.left-move{
+  transform: translateX(-200rem);
+}
+.right-move{
+  transform: translateX(200rem);
+}
+.content svg {
+  padding-bottom: 1.2rem;
+}
+.content a {
+  
+  font-size: 104px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.7rem;
+  margin-right: 0;
+  font-family: "Felidae", sans-serif;
+}
+.content{
+  ;
+  margin-top: 15vh;
+  position: relative;
+  height: 80vh;
+  max-width: 100%;
+
+}
+.ft{
+  margin: 0;
+  display: none;
+}
+.cnt > div  div{
+  margin: 0 40px;
+  transition: 2s;
+}
+.content-2 {
+
+  display: none;
+  height:40rem;
+
+  text-align: center;
+  
+  
+}
+
+
+.policy-con {
+  display: none;
+}
+.body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 5rem;
+}
+.body-content div {
+  max-width: 40rem;
+}
+.body-content p {
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+}
+.policy {
+  position: relative;
+  padding-top: 4rem;
+  right: 4.8rem;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  border-top: 2.5px solid white;
+}
+.contacts {
+  font-family: "Manrope";
+  max-width: 22%;
+}
+.contacts p {
+  font-size: 14px;
+  padding-left: 2rem;
+}
+.contact-h {
+  padding-left: 2rem;
+  font-weight: 400;
+  font-size: 32px;
+}
+.policy-link {
+  padding-left: 2rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.social {
+  padding-left: 14rem;
+  font-family: "Manrope";
+  max-width: 22%;
+}
+.social-h {
+  font-weight: 400;
+  font-size: 32px;
+}
+.network > a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.address {
+  max-width: 22%;
+  font-family: "Manrope", serif;
+  padding-left: 16rem;
+}
+.info_box{
+  display: flex;
+  justify-content: space-between;
+  width: 22vw;
+
+  height: 9vh;
+  margin: auto;
+}
+.to_cart{
+
+  color: #1b1b1b;
+  padding: 10px;
+}
+.door_name{
+  font-family: "Felidae", sans-serif;
+  font-size: 32px;
+margin: 0;
+}
+.box{
+  display: flex;
+}
+.door_box{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart_btn{
+  height: 3rem;
+  margin: auto 0;
+}
+.build{
+  margin: 0 4vw ;
+}
+label{
+  margin: 0;
+  font-size: 28px;
+}
+.bttn-dark{
+  background-color: #000;
+  border: white 1px solid;
+  padding: 5px;
+  height: 6.8rem;
+  width: 7.6vw;
+}
+.point{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+.pressed{
+  background-color: #333131;
+}
+.selector{
+  white-space: nowrap;
+  overflow-x: auto;
+  position: relative;
+}
+.sh{
+  display: none;
+}
+.nb{
+
+}
+@media only screen and (max-width: 650px){
+  .image_box{
+    width: 100%;
+    height: 60vh;
+  }
+}
+.nb{
+  width: 10%;
+}
+@media only screen and (max-width: 1200px) {
+  .content a {
+    font-size: 4rem;
+  }
+  .bttn-dark{
+    width: 9.4vw;
+  }
+}
+
+.typer{
+  width: 50vw;
+}
+.selector {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.selector::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+@media only screen and (max-width: 768px) {
+  .cnt > div div{
+    margin: 0
+  }
+  .cnt > div {
+    flex-direction: column;
+  }
+  .nb{
+    display: none;
+  }
+  .typer{
+  width: 100%;
+}
+  .content a {
+    font-size: 3rem;
+
+  }
+  .content{
+    margin-bottom: 40px;
+  }
+  .info_box{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .info_box> div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .info_box> div>div{
+    margin: auto 0;
+  }
+  .cart_btn{
+    width: 100%;
+  }
+  .dtype{
+    font-size: 26px;
+  }
+  .door_box {
+    height: 90vh;
+    border-right: none;
+
+    width: 100%;
+  }
+
+  .color{
+    width: 64px;
+    height: 64px;
+  }
+  .color_pic {
+    margin-top:20px ;
+    width: 100%;
+
+  }
+  .colors{
+    /*height: 520px;*/
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  .door_types > div{
+    width: 33.333vw;
+  }
+  .content{
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    height: auto;
+  }
+  .box{
+    flex-direction: column;
+  }
+  .image_box{
+    width: 100%;
+    height: 80vh;
+  }
+  .sh{
+    display: block;
+  }
+  .icon{
+    display: none;
+  }
+  .bttn-dark{
+    height: 2.3rem;
+    width: 23vw;
+  }
+  .nb{
+    width: 8%;
+  }
+}

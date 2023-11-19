@@ -1,0 +1,310 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #E8E7E8;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.0rem;
+}
+a{
+    text-decoration-line:none ;
+    color:white;
+}
+a:hover{
+    text-decoration-line:none ;
+    color: #4c4a4a;
+}
+
+
+img{
+    object-fit: contain;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.navbar{
+    background-color: #000;
+    padding: 15px 1vw;
+}
+.navbar-toggler-icon{
+    background-image: url("https://info.firstinspires.org/hubfs/first_in_show/mobile-menu-icon.svg");
+}
+
+.Greadings{
+    background-color: #FF0096;
+    padding: 100px 20px 70px ;
+}
+.Greadings  .container-fluid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Greadings em{
+    font-weight: bold;
+}
+
+.Greadings h2{
+    font-size: 3.8125rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+    margin-bottom: 40px;
+}
+
+
+.btnn{
+    border:0;
+    border-radius: 50px;
+    padding: 1em 4em;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+.btnn:hover{
+    background-color: #000;
+    color: #E8E7E8;
+    transition: 0.5s;
+}
+.white-pink{
+    background-color: #E8E7E8;
+    color:#FF0096;
+}
+.pink-white{
+    background-color: #FF0096;
+    color: #E8E7E8;
+}
+
+.Join-text{
+    background-color: #F3E0AB;
+}
+
+.Join-text> div{
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px ;
+}
+.Intro{
+    background-image: url(https://info.firstinspires.org/hubfs/first_in_show/texture01b.webp);
+    background-size:cover;
+    background-color: #000;
+    padding: 75px 40px 100px ;
+
+}
+.Intro > .container-fluid {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-container p {
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+
+.Intro > .video-container{
+    max-width: 1024;
+    margin: 0 auto;
+}
+
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+}
+.video-wrapper> iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.Progam-header{
+    background-color: white;
+    padding: 75px 0;
+    text-overflow:clip;
+
+}
+.Title{
+    word-wrap: break-word;
+    text-align: center;
+    color: #54555A;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.Programs{
+    display: flex;
+    color: #000;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.Programs > div{
+    width: 50%;
+    position: relative;
+}
+.program-image{
+    position: relative;
+
+    background-size: cover;
+    background-position: 50%;
+    height: 90vh;
+}
+.image-1{
+    border-radius: 0 20px 20px 0;
+    background-image: url("https://info.firstinspires.org/hs-fs/hubfs/first_in_show/FLL_2022_Feature_Image_1.webp");
+}
+.image-2{
+    border-radius: 20px 0px 0px 20px;
+    background-image: url("FLL.jpg");
+}
+.image-3{
+    border-radius: 0px 20px 20px 0px;
+    background-image: url("https://thumb.tildacdn.com/tild6262-3833-4464-a138-646537646138/-/format/webp/photo_-192.jpg");
+}
+.program-image >.image{
+    display: none;
+}
+.program-logo-right{
+    position: absolute;
+    bottom: 10vh;
+    right: 0;
+    left: auto;
+    top: auto;
+    padding: 0;
+}
+.program-logo-left{
+    position: absolute;
+    bottom: 10vh;
+    right: auto;
+    left: 0;
+    top: auto;
+    padding: 0;
+}
+.program-details{
+    padding: 0 8%;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.program-content{
+    padding-top: 10%;
+}
+.program-details p{
+    padding-bottom: 20px;
+}
+.program-brand-logo{
+    text-align: center;
+}
+footer{
+
+    border-top:solid #898c9b 2px;
+    text-align: center;
+    background-color: #000;
+    color: #E8E7E8;
+    text-decoration: none;
+}
+.footer-copyright{
+    border-top: #E8E7E8 solid 1pxs;
+    text-align: center;
+}
+.foot{
+    padding:20px 0 ;
+    display: flex;
+    max-width: 50%;
+    min-width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+.footer-copyright{
+    padding: 20px 0 ;
+}
+.foot a{
+    position: relative;
+    margin: 0 2vw;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .Join-text> div{
+        padding: 30px ;
+    }
+    .Title{
+        font-size: 30px;
+    }
+    .Programs{
+        padding-bottom: 20px;
+    }
+
+
+}
+@media screen and (max-width: 991px){
+
+    .Greadings h2 {
+        font-size: 2.75rem;
+        line-height: 1.2em;
+    }
+    .Greadings{
+        padding: 50px 20px;
+    }
+    .Programs{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .Programs > div{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+    .program-image{
+        height: auto;
+        background-image: none;
+    }
+    .program-image > .image{
+        display: block;
+        border-radius: 20px;
+
+    }
+    .program-logo-left,.program-logo-right{
+        position: static;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .btnn{
+        padding: 0.5em 4em;
+    }
+    .foot{
+        max-width: 300px;
+    }
+
+}
+
+
+
+

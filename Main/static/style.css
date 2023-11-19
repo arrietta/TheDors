@@ -1,0 +1,183 @@
+
+*{
+    color:#fff;
+    font-family: Manrope;
+}
+a:hover{
+    color: #918c8c!important;
+    transition: 0.2s;
+}
+.Logo{
+    color:#666666!important;
+    font-family: Felidae;
+    margin-left: 10px;
+    font-size: 26px!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -1.12px;
+}
+.navbar-toggler-icon{
+    background-image: url("/media/burger.svg")!important;
+}
+.navbar{
+    height: 58px;
+}
+
+.top-line{
+    border-top: #fff 2px solid!important;
+}
+
+.nav-link{
+    margin: 0 10px;
+    color: #E0E0E0;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+.nav-link[ value="active"]{
+    color: #fff;
+}
+
+main{
+    border-top: #fff 2px solid!important;
+    position: relative;
+    transition: 0.6s;
+}
+.row{
+    height: 100%;
+}
+.Line{
+    border-right: #fff 2px solid!important;
+}
+.orders{
+    padding: 0px!important;
+    height: 100%;
+}
+.order{
+    padding: 0 !important;
+    border-bottom: #fff 2px solid;
+    width: 100%;
+    height: 8rem;
+}
+.door{
+    width: calc(100% - 7.1rem);
+    float: right;
+}
+.door > div{
+    padding: 2vh 2%;
+}
+.top > span{
+    font-size: 1.6rem;
+}
+.image{
+
+    width: 7rem;
+    float: left;
+    height: 8rem;
+    background-color: #fff;
+
+}
+image_box{
+    width: 400px ;
+    background-image: url("/media/image_box.png");
+    margin-right:50px
+}
+.image > img{
+    width: 7rem;
+    height: 8rem;
+}
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.butn-light{
+    color: #000;
+    border: white 1px solid;
+}
+.butn-dark{
+    color: #fff;
+    background-color: black!important;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 0;
+}
+.buttons{
+    position: relative;
+    box-shadow: none;
+    border: 1px solid #fff;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+}
+
+.buttons > button{
+    width: 2rem;
+    height: 1.9rem;
+    font: 1em sans-serif;
+    margin: auto;
+    line-height: 0rem;
+
+}
+.buttons > div{
+    text-align: center;
+
+    margin: auto;
+    width: 2rem;
+}
+.price{
+    color: #9B9B9B;
+    text-align: right;
+
+}
+
+.delete{
+    color: #FF5757;
+    text-align: center;
+    font-size: 0.9rem;
+    text-decoration-line: underline;
+}
+@media only screen and (max-width: 425px) {
+    .top > span{
+        font-size: 1.2rem;
+    }
+    .door > div{
+        padding: 1vh 2%;
+    }
+    .buttons{
+        width: 5rem;
+        height: 1.7rem;
+
+    }
+    .buttons > button{
+        width: 1.6666rem;
+        height: 1.6rem;
+
+
+    }
+    .buttons > div{
+
+        width: 1.6666rem;
+    }
+    .order{
+        height: 6rem;
+    }
+    .image{
+        width: 6rem;
+        height: 6rem;
+    }
+    .door{
+        width: calc(100% - 6.1rem);
+    }
+}
+.shift{
+    margin-top:13vh ;
+}
+
+
